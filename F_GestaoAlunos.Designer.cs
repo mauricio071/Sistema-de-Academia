@@ -171,7 +171,6 @@
             // 
             // mtb_telefone
             // 
-            this.mtb_telefone.Enabled = false;
             this.mtb_telefone.Location = new System.Drawing.Point(373, 75);
             this.mtb_telefone.Mask = "(00) 00000-0000";
             this.mtb_telefone.Name = "mtb_telefone";

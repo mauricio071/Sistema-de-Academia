@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Academia", "Academia.csproj", "{91E5349F-60C3-41DF-A522-2446C2FA38DA}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador_Academia", "instalador\Instalador_Academia\Instalador_Academia.vdproj", "{56F4ED49-783F-43C7-B281-3E6ECC6FE043}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,15 +17,13 @@ Global
 		{91E5349F-60C3-41DF-A522-2446C2FA38DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91E5349F-60C3-41DF-A522-2446C2FA38DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91E5349F-60C3-41DF-A522-2446C2FA38DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56F4ED49-783F-43C7-B281-3E6ECC6FE043}.Debug|Any CPU.ActiveCfg = Debug
+		{56F4ED49-783F-43C7-B281-3E6ECC6FE043}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FCB4EA05-44BF-4220-8AA6-5BEDD383246C}
-	EndGlobalSection
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 EndGlobal
