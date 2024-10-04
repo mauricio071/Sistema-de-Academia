@@ -45,8 +45,8 @@
     <CollectSQLiteInteropFiles>false</CollectSQLiteInteropFiles>
   </PropertyGroup>
   <ItemGroup>
-     <Content Include="x64\SQLite.Interop.dll" />
-     <Content Include="x86\SQLite.Interop.dll" />
+     <Content Include="bin\x64\SQLite.Interop.dll" />
+     <Content Include="bin\x86\SQLite.Interop.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
