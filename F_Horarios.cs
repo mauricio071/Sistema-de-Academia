@@ -54,11 +54,16 @@ namespace Academia
             }
         }
 
-        private void btn_novo_horario_Click(object sender, EventArgs e)
+        private void LimparCampos()
         {
             tb_id_horario.Clear();
             mtb_descHorario.Clear();
             mtb_descHorario.Focus();
+        }
+
+        private void btn_novo_horario_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
         }
 
         private void btn_salvar_horario_Click(object sender, EventArgs e)
@@ -84,6 +89,7 @@ namespace Academia
                     T_DESCRICAO_HORARIO
             ";
             dgv_horarios.DataSource = Banco.Dql(vquery);
+            MessageBox.Show("Alteração salva");
         }
 
         private void btn_excluir_horario_Click(object sender, EventArgs e)
@@ -93,6 +99,7 @@ namespace Academia
                 string vquery = "DELETE FROM tb_horarios WHERE N_ID_HORARIO=" + tb_id_horario.Text; 
                 Banco.Dml(vquery);
                 dgv_horarios.Rows.Remove(dgv_horarios.CurrentRow);
+                LimparCampos();
             }
         }
 

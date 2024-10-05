@@ -57,12 +57,17 @@ namespace Academia
             }
         }
 
-        private void btn_novo_professor_Click(object sender, EventArgs e)
+        private void LimparCampos()
         {
             tb_id_professor.Clear();
             tb_professor.Clear();
             mtb_telefone.Clear();
             tb_professor.Focus();
+        }
+
+        private void btn_novo_professor_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
         }
 
         private void btn_salvar_professor_Click(object sender, EventArgs e)
@@ -89,6 +94,7 @@ namespace Academia
                     N_ID_PROFESSOR
             ";
             dgv_professores.DataSource = Banco.Dql(vquery);
+            MessageBox.Show("Alteração salva");
         }
 
         private void btn_excluir_professor_Click(object sender, EventArgs e)
@@ -99,6 +105,7 @@ namespace Academia
                 string vquery = "DELETE FROM tb_professores WHERE N_ID_PROFESSOR=" + tb_id_professor.Text;
                 Banco.Dml(vquery);
                 dgv_professores.Rows.Remove(dgv_professores.CurrentRow);
+                LimparCampos();
             }
         }
 

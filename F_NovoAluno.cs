@@ -106,7 +106,7 @@ namespace Academia
             btn_salvar.Enabled = false;
             btn_cancelar.Enabled = false;
             btn_novo.Enabled = true;
-            pb_foto.ImageLocation = destinoCompleto;
+            pb_foto.ImageLocation = "";
         }
 
         private void btn_fechar_Click(object sender, EventArgs e)

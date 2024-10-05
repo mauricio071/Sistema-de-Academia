@@ -125,6 +125,12 @@ namespace Academia
                 ", idSelecionado);
                 Banco.Dml(vqueryExcluirALuno);
                 dgv_alunos.Rows.Remove(dgv_alunos.CurrentRow);
+
+                tb_nome.Clear();
+                mtb_telefone.Clear();
+                cb_status.SelectedIndex = -1;
+                cb_turmas.SelectedIndex = -1;
+                pb_foto.ImageLocation = "";
             }
         }
 

@@ -66,6 +66,7 @@ namespace Academia
             u.N_NIVEL_USUARIO = Convert.ToInt32(Math.Round(nd_nivel.Value, 0));
             Banco.AtualizarUsuario(u);
             dgv_usuarios[1, linha].Value = tb_nome.Text;
+            MessageBox.Show("Alteração salva");
         }
 
         private void btn_excluir_Click(object sender, EventArgs e)
@@ -75,6 +76,12 @@ namespace Academia
             {
                 Banco.DeletarUsuario(tb_id.Text);
                 dgv_usuarios.Rows.Remove(dgv_usuarios.CurrentRow);
+                tb_id.Clear();
+                tb_nome.Clear();
+                tb_usuario.Clear();
+                tb_senha.Clear();
+                cb_status.SelectedIndex = -1;
+                nd_nivel.Value = 0;
             }
         }
     }

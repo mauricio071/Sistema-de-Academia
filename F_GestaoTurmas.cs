@@ -40,7 +40,7 @@ namespace Academia
             dgv_turmas.DataSource = Banco.Dql(vqueryDGV);
             dgv_turmas.Columns[0].Width = 40;
             dgv_turmas.Columns[1].Width = 120;
-            dgv_turmas.Columns[2].Width = 85;
+            dgv_turmas.Columns[2].Width = 100;
 
             string vqueryProfessores = @"
                 SELECT
@@ -127,7 +127,7 @@ namespace Academia
             tb_vagas.Text = vagas.ToString();
         }
 
-        private void btn_nova_turma_Click(object sender, EventArgs e)
+        private void LimparCampos()
         {
             tb_descricao.Clear();
             cb_professor.SelectedIndex = -1;
@@ -137,6 +137,11 @@ namespace Academia
             tb_vagas.Text = "0";
             tb_descricao.Focus();
             modo = 2;
+        }
+
+        private void btn_nova_turma_Click(object sender, EventArgs e)
+        {
+            LimparCampos();   
         }
 
         private void btn_salvar_turma_Click(object sender, EventArgs e)
@@ -200,6 +205,7 @@ namespace Academia
                 );
                 Banco.Dml(queryExcluirTurma);
                 dgv_turmas.Rows.Remove(dgv_turmas.CurrentRow);
+                LimparCampos();
             }
         }
 
