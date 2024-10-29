@@ -1,7 +1,7 @@
 <div align="center"> <h1>Sistema de Academia</h1> </div>
  
 <p align="center">Aplicação para gestão de academia, desenvolvida em C# com funcionalidades para gerenciar alunos, horários, turmas e mais.</p>
- 
+  
 <p align="center">
   <img alt="Github Top Language" src="https://img.shields.io/github/languages/top/mauricio071/Sistema-de-Academia?color=00bfa6">
   <img width="1" />
