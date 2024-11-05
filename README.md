@@ -1,5 +1,5 @@
 <div align="center"> <h1>Sistema de Academia</h1> </div>
- 
+
 <p align="center">Aplicação para gestão de academia, desenvolvida em C# com funcionalidades para gerenciar alunos, horários, turmas e mais.</p>
 
 <p align="center">
